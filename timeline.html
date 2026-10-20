@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhagat Singh — Timeline</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: #f5f1e8;
+    }
+
+    header {
+      padding: 24px 8%;
+      color: white;
+      background: #7b241c;
+      text-align: center;
+    }
+
+    header h1 { margin: 0 0 8px; }
+    header p { margin: 0; }
+
+    main {
+      width: min(900px, 90%);
+      margin: 40px auto;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 32px;
+      border-left: 3px solid #c27a2c;
+    }
+
+    .event {
+      position: relative;
+      margin: 0 0 28px;
+      padding: 18px 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 3px 12px #00000012;
+    }
+
+    .event::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: -42px;
+      width: 16px;
+      height: 16px;
+      background: #7b241c;
+      border: 3px solid #f5f1e8;
+      border-radius: 50%;
+    }
+
+    .event time {
+      color: #7b241c;
+      font-weight: bold;
+    }
+
+    .event h2 {
+      margin: 8px 0;
+      font-size: 1.2rem;
+    }
+
+    .event p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 20px;
+      color: white;
+      background: #333;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      main { width: 92%; }
+      .event { padding: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bhagat Singh's Life Journey</h1>
+    <p>A timeline of key events in his life</p>
+  </header>
+
+  <main>
+    <section class="timeline" aria-label="Bhagat Singh's timeline">
+      <article class="event">
+        <time datetime="1907-09-28">September 28, 1907</time>
+        <h2>Birth</h2>
+        <p>Bhagat Singh was born in Banga village, Punjab (now in Pakistan).</p>
+      </article>
+
+      <article class="event">
+        <time datetime="1919">1919</time>
+        <h2>Jallianwala Bagh Massacre</h2>
+        <p>This event had a deep impact on the young Bhagat Singh.</p>
+      </article>
+
+      <article class="event">
+        <time datetime="1926">1926</time>
+        <h2>Naujawan Bharat Sabha</h2>
+        <p>He helped establish the Naujawan Bharat Sabha to organize young people.</p>
+      </article>
+
+      <article class="event">
+        <time datetime="1928">1928</time>
+        <h2>Death of Lala Lajpat Rai</h2>
+        <p>Lala Lajpat Rai died after being injured during a lathi charge at a protest against the Simon Commission.</p>
+      </article>
+
+      <article class="event">
+        <time datetime="1929-04-08">April 8, 1929</time>
+        <h2>Central Legislative Assembly Protest</h2>
+        <p>Bhagat Singh and Batukeshwar Dutt threw bombs in the Assembly to protest and were arrested.</p>
+      </article>
+
+      <article class="event">
+        <time datetime="1931-03-23">March 23, 1931</time>
+        <h2>Martyrdom</h2>
+        <p>Bhagat Singh, Rajguru, and Sukhdev were executed at Lahore Central Jail.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>In memory of Shaheed Bhagat Singh</footer>
+</body>
+</html>
