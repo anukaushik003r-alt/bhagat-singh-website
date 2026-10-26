@@ -1,6 +1,4 @@
-/* Google Font */
 
-/* Google Font */
 
 *{
 margin:0;
@@ -65,15 +63,15 @@ color:#ff9933;
 .hero{
 height:100vh;
 background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("https://images.unsplash.com/photo-1524499982521-1ffd58dd89ea?w=1600");
-background-size:cover;
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.55)),
+url("shaheed.jpg");
+background-size:70%;
 background-position:center;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
+padding:40px;
 }
 
 .overlay h3{
@@ -339,8 +337,8 @@ margin-bottom:10px;
 }
 
 .gallery-card img{
-    width:100%;
-    height:300px;
+   width:100%;
+    height:400px;
     object-fit:cover;
     display:block;
 }
@@ -811,4 +809,94 @@ margin-bottom:10px;
         width:100%;
     }
 
+}
+/* Biography topic cards */
+.bio-explore {
+    padding: 55px 7%;
+    text-align: center;
+    background: #f8f5ef;
+}
+
+.bio-explore h2 {
+    font-size: 32px;
+    color: #29231e;
+}
+
+.bio-intro {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.bio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.bio-card {
+    display: block;
+    padding: 28px 18px;
+    background: white;
+    border: 1px solid #eadfce;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #302820;
+    box-shadow: 0 5px 16px rgba(0,0,0,.08);
+    transition: .3s ease;
+}
+
+.bio-card:hover {
+    transform: translateY(-6px);
+    border-color: #bd7835;
+    box-shadow: 0 10px 24px rgba(0,0,0,.14);
+}
+
+.bio-card span {
+    font-size: 35px;
+}
+
+.bio-card h3 {
+    color: #8d4826;
+    margin: 14px 0 10px;
+}
+
+.bio-card p {
+    line-height: 1.6;
+}
+
+.bio-card b {
+    color: #a45a2a;
+}
+
+.bio-details {
+    padding: 25px 8%;
+    background: white;
+}
+
+.bio-details article {
+    padding: 28px 0;
+    border-bottom: 1px solid #e8dfd3;
+    scroll-margin-top: 90px;
+}
+
+.bio-details article h2 {
+    color: #8d4826;
+}
+
+.bio-details article p {
+    line-height: 1.8;
+    color: #444;
+}
+
+@media (max-width: 750px) {
+    .bio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .bio-grid {
+        grid-template-columns: 1fr;
+    }
 }
